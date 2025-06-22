@@ -28,14 +28,14 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "QR Code Generator",
-      description: "Built a responsive QR code generator using HTML, CSS, and JavaScript, allowing users to create and download QR codes in real-time. Integrated with the qrcode library for dynamic code rendering.",
-      image: "https://plus.unsplash.com/premium_photo-1682339496351-7e79146d7c48?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHFyfGVufDB8fDB8fHww",
-      technologies: ["HTML5", "CSS3", "Tailwind CSS", "JavScript", "React.js"],
-      category: "backend",
-      liveUrl: "https://qrngener.netlify.app",
-      githubUrl: "https://github.com/Anupkumar7196/",
-      features: ["Responsive Design", "Customizable Input", "Real-Time QR Generation", "Documentation"]
+      title: "Personal-Portfolio",
+      description: "A responsive personal portfolio built with React.js and Tailwind CSS to showcase my MERN stack skills, featured projects, and experience. Includes resume access and contact form, optimized for performance and accessibility",
+      image: "https://github.com/Anupkumar7196/Personal-Portfolio/blob/main/src/assets/Screenshot%202025-06-23%20011655.png?raw=true",
+      technologies: ["React.js", "JavaScript(ES6+)", "Tailwind CSS", "React Router DOM", "HTML% & JSX"],
+      category: "frontend",
+      liveUrl: "https://personal-portfolio-one-gold-69.vercel.app/",
+      githubUrl: "https://github.com/Anupkumar7196/personal-portfolio",
+      features: ["Responsive Design", "Dynamic Hero Section", "Single Page Application(SPA)", "Tech Stack Preview"]
     },
     {
       id: 4,
@@ -50,14 +50,14 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: "Portfolio Website",
-      description: "Personal portfolio website built with React and Tailwind CSS. Fully responsive with modern animations.",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",
-      technologies: ["React", "Tailwind CSS", "Framer Motion", "Vercel"],
+      title: "QR Code Generator",
+      description: "Built a responsive QR code generator using HTML, CSS, and JavaScript, allowing users to create and download QR codes in real-time. Integrated with the qrcode library for dynamic code rendering.",
+      image: "https://plus.unsplash.com/premium_photo-1682339496351-7e79146d7c48?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHFyfGVufDB8fDB8fHww",
+      technologies: ["HTML5", "CSS3", "Tailwind CSS", "JavScript", "React.js"],
       category: "frontend",
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/johndoe/portfolio",
-      features: ["Responsive Design", "Animations", "SEO Optimized", "Fast Loading"]
+      liveUrl: "https://qrngener.netlify.app",
+      githubUrl: "https://github.com/Anupkumar7196/",
+      features: ["Responsive Design", "Customizable Input", "Real-Time QR Generation", "Documentation"]
     },
     {
       id: 6,
