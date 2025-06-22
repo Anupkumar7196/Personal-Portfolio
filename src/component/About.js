@@ -17,7 +17,7 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <img
-              src="https://github.com/Anupkumar7196/React/blob/main/src/assets/IMG_9565.JPG?raw=true"
+              src="https://github.com/Anupkumar7196/Personal-Portfolio/blob/main/src/assets/IMG_4582.JPG?raw=true"
               alt="Anup kumar"
               className="w-[400] h-auto mx-auto rounded-lg shadow-2xl"
             />

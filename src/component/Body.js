@@ -213,7 +213,7 @@ const Body = () => {
             {/* Profile Image */}
             <div className="flex-shrink-0">
               <img
-                src="https://avatars.githubusercontent.com/u/87388940?s=400&u=3537c385e5e69159d2e3bbf0541267b364c5eae8&v=4"
+                src="https://github.com/Anupkumar7196/Personal-Portfolio/blob/main/src/assets/photo.png?raw=true"
                 alt="Anup Kumar"
                 className="w-64 h-64 rounded-full object-cover border-4 border-white shadow-2xl"
               />

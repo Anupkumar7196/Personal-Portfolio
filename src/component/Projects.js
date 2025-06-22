@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import {Link} from "react-router-dom";
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");
 
@@ -206,12 +206,12 @@ const Projects = () => {
             I'm always open to discussing new opportunities and interesting projects.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/contact"
-              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-            >
-              Get In Touch
-            </a>
+            <Link
+              to="/contact"
+              className="border-2 border-white text-white px-6 py-2 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
+              >
+                Get In Touch
+            </Link>
             <a
               href="mailto:anupk7196@gmail.com"
               className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
