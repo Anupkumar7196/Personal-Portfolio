@@ -15,11 +15,11 @@ const About = () => {
 
         {/* Main Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-          <div>
+          <div className="flex-shrink-0 flex justify-center items-center">
             <img
               src="https://github.com/Anupkumar7196/Personal-Portfolio/blob/main/src/assets/IMG_4582.JPG?raw=true"
               alt="Anup kumar"
-              className="w-[400] h-auto mx-auto rounded-lg shadow-2xl"
+              className="w-64 h-64 rounded-lg object-cover border-4 border-white shadow-2xl items-cente"
             />
           </div>
           
@@ -39,10 +39,10 @@ const About = () => {
             </p>
             
             <div className="flex flex-wrap gap-4 mt-6">
-              <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">Problem Solver</span>
-              <span className="bg-green-100 text-green-800 px-4 py-2 rounded-full">Team Player</span>
-              <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Quick Learner</span>
-              <span className="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">Creative Thinker</span>
+              <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full transition duration-300 ease-in-out hover:scale-95 hover:bg-transparent-100 cursor-pointer">Problem Solver</span>
+              <span className="bg-green-100 text-green-800 px-4 py-2 rounded-full transition duration-300 ease-in-out hover:scale-95 hover:bg-transparent-100 cursor-pointer">Team Player</span>
+              <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full transition duration-300 ease-in-out hover:scale-95 hover:bg-transparent-100 cursor-pointer">Quick Learner</span>
+              <span className="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full transition duration-300 ease-in-out hover:scale-95 hover:bg-transparent-100 cursor-pointer">Creative Thinker</span>
             </div>
           </div>
         </div>
@@ -105,15 +105,15 @@ const About = () => {
         {/* Personal Info */}
         <div className="mt-16 bg-gradient-to-r from-pink-600 to-purple-700 text-white p-8 rounded-lg">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div>
+            <div className="transition duration-300 ease-in-out hover:scale-95 hover:bg-transparent-100 cursor-pointer">
               <h4 className="text-2xl font-bold mb-2">New Delhi</h4>
               <p className="text-blue-100">Delhi, India</p>
             </div>
-            <div>
+            <div className="transition duration-300 ease-in-out hover:scale-95 hover:bg-transparent-100 cursor-pointer">
               <h4 className="text-2xl font-bold mb-2">Available</h4>
               <p className="text-blue-100">For Freelance</p>
             </div>
-            <div>
+            <div className="transition duration-300 ease-in-out hover:scale-95 hover:bg-transparent-100 cursor-pointer">
               <h4 className="text-2xl font-bold mb-2">Interests</h4>
               <p className="text-blue-100">Photography, Hiking, Tech</p>
             </div>

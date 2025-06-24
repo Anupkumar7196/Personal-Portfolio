@@ -82,8 +82,8 @@ const Skills = () => {
         {/* Skills Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {skillCategories.map((category, categoryIndex) => (
-            <div key={categoryIndex} className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className={`text-2xl font-bold mb-6 inline-block px-4 py-2 rounded-lg ${getColorClasses(category.color)}`}>
+            <div key={categoryIndex} className="bg-white rounded-lg shadow-lg p-8 ">
+              <h2 className={`text-2xl font-bold mb-6 inline-block px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-95 hover:bg-transparent-100 cursor-pointer ${getColorClasses(category.color)}`}>
                 {category.title}
               </h2>
               <div className="space-y-4">
@@ -111,7 +111,7 @@ const Skills = () => {
           <h2 className="text-3xl font-bold mb-6 text-center">Other Skills & Interests</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-400 bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-blue-400 bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4 transition duration-300 ease-in-out hover:scale-95 hover:bg-transparent-100 cursor-pointer">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0L4 16z"
                   />
@@ -121,7 +121,7 @@ const Skills = () => {
               <p className="text-blue-100">Creative approach to complex challenges</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-400 bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-blue-400 bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4 transition duration-300 ease-in-out hover:scale-95 hover:bg-transparent-100 cursor-pointer">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7h2l2-3h10l2 3h2a2 2 0 012 2v10a2 2 0 01-2 2H3a2 2 0 01-2-2V9a2 2 0 012-2zm9 3a4 4 0 100 8 4 4 0 000-8z"
                  />
@@ -131,7 +131,7 @@ const Skills = () => {
               <p className="text-blue-100">Possess a keen eye for capturing and professionally editing high-quality photographs</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-400 bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-blue-400 bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4 transition duration-300 ease-in-out hover:scale-95 hover:bg-transparent-100 cursor-pointer">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3C7.03 3 3 7.03 3 12h3a6 6 0 016-6v3l4-4-4-4v3z M12 21c4.97 0 9-4.03 9-9h-3a6 6 0 01-6 6v-3l-4 4 4 4v-3z"
                  />
@@ -157,7 +157,7 @@ const Skills = () => {
               { name: "MongoDB Certified Developer", issuer: "Namaste DataBase", year: "2024" },
               { name: "Express.js Certified Developer", issuer: "Namaste Express", year: "2024" },
             ].map((cert, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500 transition duration-300 ease-in-out hover:scale-95 hover:bg-transparent-100 cursor-pointer">
                 <h3 className="font-semibold text-lg mb-2">{cert.name}</h3>
                 <p className="text-gray-600 text-sm mb-1">{cert.issuer}</p>
                 <p className="text-gray-500 text-sm">{cert.year}</p>
