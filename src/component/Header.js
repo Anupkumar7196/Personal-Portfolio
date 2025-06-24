@@ -16,11 +16,11 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-white shadow-lg sticky top-0 z-50">
+    <header className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 shadow-lg sticky top-0 z-50">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold text-gray-800 hover:text-blue-600 transition-colors">
+          <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-blue-200 bg-clip-text text-transparent group-hover:from-blue-400 group-hover:via-purple-400 group-hover:to-indigo-400 transition-all duration-300 hover:text-indigo-400 ">
             Portfolio
           </Link>
 
@@ -30,7 +30,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`font-medium transition-colors hover:text-blue-600 ${
+                className={`font-medium bg-gradient-to-r from-white via-blue-100 to-blue-200 bg-clip-text text-transparent group-hover:from-blue-400 group-hover:via-purple-400 group-hover:to-indigo-400 transition-all duration-300 hover:text-indigo-400 ${
                   isActive(item.path) 
                     ? "text-blue-600 border-b-2 border-blue-600 pb-1" 
                     : "text-gray-700"

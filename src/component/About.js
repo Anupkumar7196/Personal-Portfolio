@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="py-5 bg-gradient-to-r from-blue-600 to-purple-700">
+    <div className="py-5 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
       <div className="container mx-auto px-6">
         {/* Hero Section */}
         <div className="text-center mb-8">
@@ -19,7 +19,7 @@ const About = () => {
             <img
               src="https://github.com/Anupkumar7196/Personal-Portfolio/blob/main/src/assets/IMG_4582.JPG?raw=true"
               alt="Anup kumar"
-              className="w-64 h-64 rounded-lg object-cover border-4 border-white shadow-2xl items-cente"
+              className="w-64 h-64 rounded-lg object-cover border-4 border-gray-800 shadow-2xl items-cente"
             />
           </div>
           
@@ -50,8 +50,9 @@ const About = () => {
         {/* Education & Experience */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Education */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+          <div className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900
+             p-8 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
               <svg className="w-6 h-6 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
@@ -60,12 +61,12 @@ const About = () => {
             </h3>
             <div className="space-y-4">
               <div className="border-l-4 border-blue-500 pl-4">
-                <h4 className="font-semibold text-lg">BACHELOR OF TECHNOLOGY (B.Tech): </h4><span>Computer Sceince and Engineering</span>
-                <p className="text-gray-600 text-[12px]">Panipat Institute of Engineering and Technology, Panipat (Haryana)</p>
+                <h4 className="font-semibold text-lg text-gray-300">BACHELOR OF TECHNOLOGY (B.Tech): </h4><span className="text-gray-400">Computer Sceince and Engineering</span>
+                <p className="text-gray-500 text-[12px]">Panipat Institute of Engineering and Technology, Panipat (Haryana)</p>
                 <p className="text-sm text-gray-500">2020 - 2024</p>
               </div>
               <div className="border-l-4 border-green-500 pl-4">
-                <h4 className="font-semibold text-lg">HIGHER SECONDARY EDUCATION (12th Grade):</h4><span className="text-[12px]">Maharana Pratap College, Siwan (Bihar)</span>
+                <h4 className="font-semibold text-lg text-gray-300">HIGHER SECONDARY EDUCATION (12th Grade):</h4><span className="text-[12px] text-gray-400">Maharana Pratap College, Siwan (Bihar)</span>
                 {/* <p className="text-gray-600">Tech Bootcamp</p> */}
                 <p className="text-sm text-gray-500">2018 - 2019</p>
               </div>
@@ -73,27 +74,28 @@ const About = () => {
           </div>
 
           {/* Experience */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-              <svg className="w-6 h-6 mr-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900
+             p-8 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
+              <svg className="w-6 h-6 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2V6z" />
               </svg>
               Achievements
             </h3>
             <div className="space-y-4">
               <div className="border-l-4 border-blue-500 pl-4">
-                <h4 className="font-semibold text-lg">Certification in Java Programming</h4>
-                <p className="text-gray-600 text-[12px]">Successfully completed the Java Programming certification program awarded by "ORACAL ACADEMY."</p>
+                <h4 className="font-semibold text-lg text-gray-300">Certification in Java Programming</h4>
+                <p className="text-gray-400 text-[12px]">Successfully completed the Java Programming certification program awarded by "ORACAL ACADEMY."</p>
                 <p className="text-sm text-gray-500">2023</p>
               </div>
               <div className="border-l-4 border-green-500 pl-4">
-                <h4 className="font-semibold text-lg">1st Position in National Science Day Competition</h4>
-                <p className="text-gray-600 text-[12px]">Secured the top position in the college-wide competition themed "FUTURE OF STI: IMPACT ON EDUCATION, SKILLS & WORK" in commemoration of National Science Day.</p>
+                <h4 className="font-semibold text-lg text-gray-300">1st Position in National Science Day Competition</h4>
+                <p className="text-gray-400 text-[12px]">Secured the top position in the college-wide competition themed "FUTURE OF STI: IMPACT ON EDUCATION, SKILLS & WORK" in commemoration of National Science Day.</p>
                 <p className="text-sm text-gray-500">February 24, 2021 </p>
               </div>
               <div className="border-l-4 border-purple-500 pl-4">
-                <h4 className="font-semibold text-lg">Published Book Chapter</h4>
-                <p className="text-gray-600 text-[12px]">Contributed a distinguished book chapter titled "Exploring News App (Khabar) Impact: Design, Features, and User Behavior in the Digital Era."</p>
+                <h4 className="font-semibold text-lg text-gray-300">Published Book Chapter</h4>
+                <p className="text-gray-400 text-[12px]">Contributed a distinguished book chapter titled "Exploring News App (Khabar) Impact: Design, Features, and User Behavior in the Digital Era."</p>
                 <p className="text-gray-600 text-[12px]">The chapter is published in "IIPV3EBS14_G23 Futuristic Trends in Information Technology," Volume 3, 2023, with Chapter ID: E14S14G23P3G-IS.</p>
                 <p className="text-sm text-gray-500">2021
                 </p>
@@ -103,7 +105,8 @@ const About = () => {
         </div>
 
         {/* Personal Info */}
-        <div className="mt-16 bg-gradient-to-r from-pink-600 to-purple-700 text-white p-8 rounded-lg">
+        <div className="mt-16 bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900
+ text-white p-8 rounded-lg">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="transition duration-300 ease-in-out hover:scale-95 hover:bg-transparent-100 cursor-pointer">
               <h4 className="text-2xl font-bold mb-2">New Delhi</h4>

@@ -83,7 +83,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-600 to-purple-700">
+    <div className="min-h-screen bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
       <div className="py-5">
         <div className="container mx-auto px-6">
           {/* Header */}
@@ -131,9 +131,10 @@ const Contact = () => {
               </div>
 
               {/* Additional Info Card */}
-              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 mt-8">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Quick Response Promise</h3>
-                <p className="text-gray-600">
+              <div className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900
+               p-6 rounded-2xl shadow-lg border border-gray-700 mt-8">
+                <h3 className="text-xl font-semibold text-gray-300 mb-3">Quick Response Promise</h3>
+                <p className="text-gray-400">
                   I typically respond to messages within 24 hours. For urgent matters, 
                   feel free to call or send a E-mail for faster response.
                 </p>
@@ -141,13 +142,14 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
-              <h2 className="text-2xl font-bold text-gray-800 mb-6">Send Message</h2>
+            <div className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900
+               p-8 rounded-2xl shadow-xl border border-gray-100">
+              <h2 className="text-2xl font-bold text-gray-200 mb-6">Send Message</h2>
               
               {submitStatus === "success" && (
-                <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+                <div className="mb-6 p-4 bg-green-50 border border-gray-200 rounded-lg">
                   <div className="flex items-center">
-                    <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     <p className="text-green-700 font-medium">Message sent successfully!</p>
@@ -158,7 +160,7 @@ const Contact = () => {
               <div className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                       Full Name *
                     </label>
                     <input
@@ -168,13 +170,13 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-300"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-300"
                       placeholder="Your full name"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                       Email Address *
                     </label>
                     <input
@@ -184,14 +186,14 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-300"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-300"
                       placeholder="your.email@example.com"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
                     Subject *
                   </label>
                   <input
@@ -201,13 +203,13 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-300"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-300"
                     placeholder="What's this about?"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
                     Message *
                   </label>
                   <textarea
@@ -217,7 +219,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-300 resize-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-300 resize-none"
                     placeholder="Tell me about your project or just say hello!"
                   />
                 </div>
@@ -248,7 +250,7 @@ const Contact = () => {
               </div>
 
               <div className="mt-6 pt-6 border-t border-gray-200">
-                <p className="text-sm text-gray-500 text-center">
+                <p className="text-sm text-gray-400 text-center">
                   By sending this message, you agree to be contacted via email or phone regarding your inquiry.
                 </p>
               </div>
@@ -259,21 +261,21 @@ const Contact = () => {
           <div className="mt-20 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-gray-100 mb-12">Frequently Asked Questions</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-white p-6 rounded-xl shadow-lg">
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">How quickly do you respond?</h3>
-                <p className="text-gray-600">I typically respond within 24 hours, often much sooner. For urgent matters, please call or message on social media.</p>
+              <div className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 p-6 rounded-xl shadow-lg">
+                <h3 className="text-lg font-semibold text-gray-300 mb-3">How quickly do you respond?</h3>
+                <p className="text-gray-400">I typically respond within 24 hours, often much sooner. For urgent matters, please call or message on social media.</p>
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-lg">
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">What types of projects do you work on?</h3>
-                <p className="text-gray-600">I work on web development, mobile apps, consulting, and various technology projects. Feel free to reach out with any ideas!</p>
+              <div className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 p-6 rounded-xl shadow-lg">
+                <h3 className="text-lg font-semibold text-gray-300 mb-3">What types of projects do you work on?</h3>
+                <p className="text-gray-400">I work on web development, mobile apps, consulting, and various technology projects. Feel free to reach out with any ideas!</p>
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-lg">
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">Do you offer free consultations?</h3>
-                <p className="text-gray-600">Yes! I offer a 30-minute free consultation to discuss your project and see if we're a good fit to work together.</p>
+              <div className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 p-6 rounded-xl shadow-lg">
+                <h3 className="text-lg font-semibold text-gray-300 mb-3">Do you offer free consultations?</h3>
+                <p className="text-gray-400">Yes! I offer a 30-minute free consultation to discuss your project and see if we're a good fit to work together.</p>
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-lg">
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">What's your typical project timeline?</h3>
-                <p className="text-gray-600">Project timelines vary based on complexity, but most projects are completed within 2-8 weeks. We'll discuss specifics during our consultation.</p>
+              <div className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 p-6 rounded-xl shadow-lg">
+                <h3 className="text-lg font-semibold text-gray-300 mb-3">What's your typical project timeline?</h3>
+                <p className="text-gray-400">Project timelines vary based on complexity, but most projects are completed within 2-8 weeks. We'll discuss specifics during our consultation.</p>
               </div>
             </div>
           </div>

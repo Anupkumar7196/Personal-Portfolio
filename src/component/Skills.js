@@ -68,7 +68,7 @@ const Skills = () => {
   };
 
   return (
-    <div className="py-5 bg-gradient-to-r from-blue-600 to-purple-700">
+    <div className="py-5 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
@@ -82,16 +82,17 @@ const Skills = () => {
         {/* Skills Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {skillCategories.map((category, categoryIndex) => (
-            <div key={categoryIndex} className="bg-white rounded-lg shadow-lg p-8 ">
+            <div key={categoryIndex} className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900
+             rounded-lg shadow-lg p-8 ">
               <h2 className={`text-2xl font-bold mb-6 inline-block px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:scale-95 hover:bg-transparent-100 cursor-pointer ${getColorClasses(category.color)}`}>
                 {category.title}
               </h2>
-              <div className="space-y-4">
+              <div className="space-y-4 ">
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex} className="space-y-2">
-                    <div className="flex justify-between items-center">
-                      <span className="font-medium text-gray-700">{skill.name}</span>
-                      <span className="text-sm text-gray-500">{skill.level}%</span>
+                    <div className="flex justify-between items-center ">
+                      <span className="font-medium text-gray-300">{skill.name}</span>
+                      <span className="text-sm text-gray-400">{skill.level}%</span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2">
                       <div
@@ -107,7 +108,7 @@ const Skills = () => {
         </div>
 
         {/* Additional Skills */}
-        <div className="bg-gradient-to-r from-blue-600 to-purple-700 text-white p-8 rounded-lg">
+        <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white p-8 rounded-lg">
           <h2 className="text-3xl font-bold mb-6 text-center">Other Skills & Interests</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -157,9 +158,10 @@ const Skills = () => {
               { name: "MongoDB Certified Developer", issuer: "Namaste DataBase", year: "2024" },
               { name: "Express.js Certified Developer", issuer: "Namaste Express", year: "2024" },
             ].map((cert, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500 transition duration-300 ease-in-out hover:scale-95 hover:bg-transparent-100 cursor-pointer">
-                <h3 className="font-semibold text-lg mb-2">{cert.name}</h3>
-                <p className="text-gray-600 text-sm mb-1">{cert.issuer}</p>
+              <div key={index} className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900
+               p-6 rounded-lg shadow-lg border-l-4 border-blue-500 transition duration-300 ease-in-out hover:scale-95 hover:bg-transparent-100 cursor-pointer">
+                <h3 className="font-semibold text-gray-300 text-lg mb-2">{cert.name}</h3>
+                <p className="text-gray-400 text-sm mb-1">{cert.issuer}</p>
                 <p className="text-gray-500 text-sm">{cert.year}</p>
               </div>
             ))}
