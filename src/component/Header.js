@@ -33,7 +33,7 @@ const Header = () => {
                 className={`font-medium bg-gradient-to-r from-white via-blue-100 to-blue-200 bg-clip-text text-transparent group-hover:from-blue-400 group-hover:via-purple-400 group-hover:to-indigo-400 transition-all duration-300 hover:text-indigo-400 ${
                   isActive(item.path) 
                     ? "text-blue-600 border-b-2 border-blue-600 pb-1" 
-                    : "text-gray-700"
+                    : "text-gray-300"
                 }`}
               >
                 {item.name}
@@ -79,7 +79,7 @@ const Header = () => {
                 key={item.name}
                 to={item.path}
                 className={`block py-2 font-medium transition-colors hover:text-blue-600 ${
-                  isActive(item.path) ? "text-blue-600" : "text-gray-700"
+                  isActive(item.path) ? "text-blue-600" : "text-gray-300"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
