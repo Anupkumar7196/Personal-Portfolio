@@ -43,7 +43,7 @@ const Header = () => {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden focus:outline-none"
+            className="md:hidden focus:outline-none bg-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg
