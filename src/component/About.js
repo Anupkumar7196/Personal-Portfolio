@@ -19,7 +19,7 @@ const About = () => {
             <img
               src="https://github.com/Anupkumar7196/Personal-Portfolio/blob/main/src/assets/IMG_4582.JPG?raw=true"
               alt="Anup kumar"
-              className="w-64 h-64 rounded-lg object-cover border-4 border-gray-800 shadow-2xl items-cente"
+              className="w-100 h-130 rounded-lg object-cover border-4 border-gray-800 shadow-2xl items-cente"
             />
           </div>
           
