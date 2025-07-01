@@ -43,7 +43,7 @@ const Projects = () => {
       description: "Built a responsive and user-friendly form with real-time input validation using JavaScript. Implemented checks for required fields, email format, and password strength to ensure data accuracy.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
       technologies: ["React", "JavaScript", "HMTL5", "CSS#", "Tailwind CSS"],
-      category: "fullstack",
+      category: "frontend",
       liveUrl: "https://verifyform.netlify.app",
       githubUrl: "https://github.com/Anupkumar7196/",
       features: ["Real-Time Input Validation", "Required Field Checks", "Responsive & Accessible UI", "Dynamic Error Messages"]

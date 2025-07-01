@@ -166,7 +166,7 @@ const Body = () => {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
     link.href =
-      "https://drive.google.com/file/d/1UrMHea0H24o6Iipa6uc4hj3ZfFva74WY/view?usp=drive_link";
+      "https://drive.google.com/file/d/149qblGgaNtJF5_cIM-Eg8bxuVaZ6ijBx/view?usp=sharing";
       link.target="_blank"
       
     link.download = "AnupUpd(Resume).pdf";
@@ -203,6 +203,7 @@ const Body = () => {
 
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting]);
+
 
   return (
     <div className="min-h-screen">
@@ -276,8 +277,8 @@ const Body = () => {
             </div>
             <div className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900
                p-6 rounded-lg shadow-lg transition duration-300 ease-in-out hover:scale-95 hover:bg-transparent-100 cursor-pointer">
-              <h3 className="text-4xl font-bold text-gray-300 mb-2">30+</h3>
-              <p className="text-gray-400">Happy Clients</p>
+              <h3 className="text-4xl font-bold text-gray-300 mb-2">Fresher</h3>
+              <p className="text-gray-400">Look for Opportunities</p>
             </div>
             <div className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900
                p-6 rounded-lg shadow-lg transition duration-300 ease-in-out hover:scale-95 hover:bg-transparent-100 cursor-pointer">
@@ -294,7 +295,7 @@ const Body = () => {
           <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-white via-blue-100 to-blue-200 bg-clip-text text-transparent ">
             Featured Projects
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[1, 2, 3].map((project) => (
               <div
                 key={project}
@@ -329,7 +330,102 @@ const Body = () => {
                     </span>
                   </div>
                   <a
-                    href="#"
+                    href="https://courseapp-zeta.vercel.app/" target="_blank"
+                    className="text-blue-600 hover:text-blue-800 font-medium"
+                  >
+                    View Project →
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div> */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[1, 2, 3].map((project) => (
+            <div
+              key={project}
+              className={`bg-gradient-to-r ${
+                project === 3 
+                  ? "from-gray-900 via-blue-900 to-gray-900" 
+                  : "from-gray-900 via-blue-900 to-gray-900"
+              } rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow`}
+            >
+            <img
+              src={
+                project === 1
+                  ? "https://plus.unsplash.com/premium_photo-1661771564227-1d8484e32c8f?w=600&auto=format&fit=crop& q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b25saW5lJTIwY291cnNlfGVufDB8fDB8fHww"
+                  : project === 2
+                  ? "https://github.com/Anupkumar7196/Personal-Portfolio/blob/main/src/assets/Screenshot%202025-06-23%20011655.png?raw=true"
+                  : "https://images.unsplash.com/photo-1613329671121-5d1cf551cc3f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fHNvbmd8ZW58MHx8MHx8fDA%3D"
+              }
+                  alt={`Project ${project}`}
+                className="w-full h-48 object-cover"
+            />
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2 text-white">
+                    ❖ {
+                      project === 1 
+                        ? "CourseOcean: Learning Platform" 
+                        : project === 2 
+                        ? "Personal Portfolio: Web Developer" 
+                        : "Melodify: Music Streaming"
+                    }
+                  </h3>
+                  <p className="text-gray-300 mb-4">
+                    {project === 1
+                      ? "Built a scalable e-learning platform with secure JWT authentication, Stripe payment integration, and role-based access. Developed a responsive React.js UI and optimized the Node.js/Express.js backend for performance and efficient data handling."
+                      : project === 2
+                      ? "Designed and developed a modern, responsive personal portfolio website showcasing my skills and projects. Features smooth animations, dark thime, contact forms, and optimized performance. Built with modern web technologies and deployed on Vercel."
+                      : "Developed a full-stack music streaming application with playlist management, social features, and real-time chat. Features include audio visualization, recommendation algorithms, and seamless cross-device synchronization with offline playback support."
+                    }
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project === 1 ? (
+                      <>
+                        <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">
+                          React
+                        </span>
+                        <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">
+                          Node.js
+                        </span>
+                        <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">
+                          MongoDB
+                        </span>
+                      </>
+                    ) : project === 2 ? (
+                      <>
+                        <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">
+                          React
+                        </span>
+                        <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">
+                          Tailwind CSS
+                        </span>
+                        <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">
+                          Vercel
+                        </span>
+                      </>
+                    ) : (
+                      <>
+                        <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">
+                          React
+                        </span>
+                        <span className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">
+                          JavaScript
+                        </span>
+                        <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">
+                          Spotify API
+                        </span>
+                      </>
+                    )}
+                  </div>
+                  <a
+                    href={
+                      project === 1 
+                        ? "https://courseapp-zeta.vercel.app/" 
+                        : project === 2 
+                        ? "https://personal-portfolio-one-gold-69.vercel.app/" 
+                        : "https://melodifyin.netlify.app"
+                    }
+                    target="_blank"
                     className="text-blue-600 hover:text-blue-800 font-medium"
                   >
                     View Project →
