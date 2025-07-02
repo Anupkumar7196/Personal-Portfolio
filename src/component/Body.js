@@ -166,7 +166,7 @@ const Body = () => {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
     link.href =
-      "https://drive.google.com/file/d/149qblGgaNtJF5_cIM-Eg8bxuVaZ6ijBx/view?usp=sharing";
+      "https://drive.google.com/file/d/1B4egAOE3gTgLYtrXzVYp6X5e904m-i5w/view?usp=sharing";
       link.target="_blank"
       
     link.download = "AnupUpd(Resume).pdf";
