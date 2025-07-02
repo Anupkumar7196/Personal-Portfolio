@@ -82,30 +82,7 @@ const Contact = () => {
       
     }
   ];
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    setResult("Sending....");
-    const formData = new FormData(event.target);
-
-    formData.append("access_key", "c6d7a226-48d4-4d15-afee-a1eb64955f36");
-
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData
-    });
-
-    const data = await response.json();
-
-    if (data.success) {
-      setResult("");
-      alert("Form Submitted Successfully");
-      event.target.reset();
-    } else {
-      console.log("Error", data);
-      alert(data.message);
-      setResult("");
-    }
-  };
+  
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
@@ -182,7 +159,7 @@ const Contact = () => {
                 </div>
               )}
 
-              <div className="space-y-6" onSubmit={onSubmit}>
+              <div className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
@@ -268,7 +245,7 @@ const Contact = () => {
                       <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                       </svg>
-                      {result ? result : "Send Message"}
+                      Send Message
                     </div>
                   )}
                 </button>
