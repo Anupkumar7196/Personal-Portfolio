@@ -160,7 +160,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import { motion } from "motion/react"
 
 const Body = () => {
   const handleDownloadResume = () => {
@@ -210,7 +210,12 @@ const Body = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white py-5">
         <div className="container mx-auto px-6 text-center">
-          <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+          <motion.div 
+            initial={{ opacity: 0, y: 100 }}
+            transition={{ duration: 1.5 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
             {/* Profile Image */}
             <div className="flex-shrink-0">
               <img
@@ -257,14 +262,19 @@ const Body = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Quick Stats */}
       <section className="py-16 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+          <motion.div 
+          initial={{ opacity: 0, y: 100 }}
+          transition={{ duration: 1.5 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900
                p-6 rounded-lg shadow-lg transition duration-300 ease-in-out     hover:scale-95 hover:bg-transparent-100 cursor-pointer">
               <h3 className="text-4xl font-bold text-gray-300 mb-2">10+</h3>
@@ -285,13 +295,18 @@ const Body = () => {
               <h3 className="text-4xl font-bold text-gray-300 mb-2">24/7</h3>
               <p className="text-gray-400">Support</p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Featured Projects */}
       <section className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 py-16">
-        <div className="container mx-auto px-6">
+        <motion.div 
+          initial={{ opacity: 0, x: 200 }}
+          transition={{ duration: 1.5 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+        className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-white via-blue-100 to-blue-200 bg-clip-text text-transparent ">
             Featured Projects
           </h2>
@@ -442,12 +457,17 @@ const Body = () => {
               View All Projects
             </Link>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* Skills */}
       <section className="py-16 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
-        <div className="container mx-auto px-6 text-center">
+        <motion.div 
+        initial={{ opacity: 0, x: -200 }}
+        transition={{ duration: 1.5 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-12 bg-gradient-to-r from-white via-blue-100 to-blue-200 bg-clip-text text-transparent ">Tech Stack</h2>
           <div className="grid grid-cols-2 md:grid-cols-6 gap-4 cursor-pointer ">
             {[
@@ -480,7 +500,7 @@ const Body = () => {
               View All Skills
             </Link>
           </div>
-        </div>
+        </motion.div>
       </section>
     </div>
   );

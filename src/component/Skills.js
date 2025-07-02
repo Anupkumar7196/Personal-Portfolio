@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "motion/react"
 const Skills = () => {
   const skillCategories = [
     {
@@ -71,16 +72,26 @@ const Skills = () => {
     <div className="py-5 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
       <div className="container mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-16">
+        <motion.div
+        initial={{ opacity: 0, x: -200 }}
+        transition={{ duration: 1.5 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="text-center mb-16">
           <h1 className="text-5xl font-bold bg-gradient-to-r from-yellow-400 to-pink-400 bg-clip-text text-transparent mb-6">My Skills</h1>
           <p className="text-xl text-gray-100 max-w-3xl mx-auto">
             Here are the technologies and tools I work with to bring ideas to life. 
             I'm always learning and expanding my skill set.
           </p>
-        </div>
+        </motion.div>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+        <motion.div 
+        initial={{ opacity: 0, x: 200 }}
+        transition={{ duration: 1.5 }} 
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}    
+        className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {skillCategories.map((category, categoryIndex) => (
             <div key={categoryIndex} className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900
              rounded-lg shadow-lg p-8 ">
@@ -105,10 +116,15 @@ const Skills = () => {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
 
         {/* Additional Skills */}
-        <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white p-8 rounded-lg">
+        <motion.div 
+        initial={{ opacity: 0, x: -200 }}
+        transition={{ duration: 1.5 }} 
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }} 
+        className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white p-8 rounded-lg">
           <h2 className="text-3xl font-bold mb-6 text-center">Other Skills & Interests</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -142,10 +158,15 @@ const Skills = () => {
               <p className="text-blue-100">Code optimization and scalable solutions</p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Certifications */}
-        <div className="mt-16">
+        <motion.div 
+        initial={{ opacity: 0, x: 200 }}
+        transition={{ duration: 1.5 }} 
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }} 
+        className="mt-16">
           <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-yellow-400 to-pink-400 bg-clip-text text-transparent">Certifications</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
@@ -166,7 +187,7 @@ const Skills = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

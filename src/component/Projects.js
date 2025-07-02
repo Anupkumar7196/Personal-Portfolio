@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {Link} from "react-router-dom";
+import { motion } from "motion/react";
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");
 
@@ -87,16 +88,26 @@ const Projects = () => {
     <div className="py-5 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
       <div className="container mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-16">
+        <motion.div
+          initial={{ opacity: 0, x: -200 }}
+          transition={{ duration: 1.5 }} 
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }} 
+         className="text-center mb-16">
           <h1 className="text-5xl font-bold bg-gradient-to-r from-yellow-400 to-pink-400 bg-clip-text text-transparent mb-5 py-2">My Projects</h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Here's a collection of projects I've worked on, showcasing different technologies 
             and solving various challenges.
           </p>
-        </div>
+        </motion.div>
 
         {/* Filter Buttons */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <motion.div 
+        initial={{ opacity: 0, x: 200 }}
+        transition={{ duration: 1.5 }} 
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }} 
+        className="flex flex-wrap justify-center gap-4 mb-12">
           {filters.map((filter) => (
             <button
               key={filter.key}
@@ -110,10 +121,15 @@ const Projects = () => {
               {filter.label}
             </button>
           ))}
-        </div>
+        </motion.div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div 
+        initial={{ opacity: 0, x: -200 }}
+        transition={{ duration: 1.5 }} 
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }} 
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
             <div key={project.id} className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900
                rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
@@ -198,10 +214,15 @@ const Projects = () => {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
 
         {/* Call to Action */}
-        <div className="mt-16 text-center bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white p-8 rounded-lg">
+        <motion.div 
+        initial={{ opacity: 0, x: 200 }}
+        transition={{ duration: 1.5 }} 
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }} 
+        className="mt-16 text-center bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white p-8 rounded-lg">
           <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-yellow-400 to-pink-400 bg-clip-text text-transparent">Interested in Working Together?</h2>
           <p className="text-xl mb-6 text-blue-100">
             I'm always open to discussing new opportunities and interesting projects.
@@ -220,7 +241,7 @@ const Projects = () => {
               Send Email
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

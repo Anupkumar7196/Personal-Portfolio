@@ -1,20 +1,30 @@
 import React from "react";
-
+import { motion } from "motion/react"
 const About = () => {
   return (
     <div className="py-5 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
       <div className="container mx-auto px-6">
         {/* Hero Section */}
-        <div className="text-center mb-8">
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          transition={{ duration: 1.5 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        className="text-center mb-8">
           <h1 className="text-5xl font-bold bg-gradient-to-r from-yellow-400 to-pink-400 bg-clip-text text-transparent mb-4">About Me</h1>
           <p className="text-lg text-white max-w-3xl mx-auto">
             A passionate MERN stack developer with a love for creating innovative solutions 
             and bringing ideas to life through code.
           </p>
-        </div>
+        </motion.div>
 
         {/* Main Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+        <motion.div 
+        initial={{ opacity: 0, x: 200 }}
+        transition={{ duration: 1.5 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div className="flex-shrink-0 flex justify-center items-center">
             <img
               src="https://github.com/Anupkumar7196/Personal-Portfolio/blob/main/src/assets/WhatsApp%20Image%202025-06-24%20at%2022.52.33.jpeg?raw=true"
@@ -45,10 +55,15 @@ const About = () => {
               <span className="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full transition duration-300 ease-in-out hover:scale-95 hover:bg-transparent-100 cursor-pointer">Creative Thinker</span>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Education & Experience */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <motion.div 
+        initial={{ opacity: 0, x: -200 }}
+        transition={{ duration: 1.5 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Education */}
           <div className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900
              p-8 rounded-lg shadow-lg">
@@ -102,11 +117,16 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Personal Info */}
-        <div className="mt-16 bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900
- text-white p-8 rounded-lg">
+        <motion.div 
+        initial={{ opacity: 0, x: 200 }}
+        transition={{ duration: 1.5 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="mt-16 bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900
+         text-white p-8 rounded-lg">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="transition duration-300 ease-in-out hover:scale-95 hover:bg-transparent-100 cursor-pointer">
               <h4 className="text-2xl font-bold mb-2">New Delhi</h4>
@@ -121,7 +141,7 @@ const About = () => {
               <p className="text-blue-100">Photography, Hiking, Tech</p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

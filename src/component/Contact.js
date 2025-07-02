@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { motion } from "motion/react";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -89,17 +89,27 @@ const Contact = () => {
       <div className="py-5">
         <div className="container mx-auto px-6">
           {/* Header */}
-          <div className="text-center mb-15">
+          <motion.div 
+          initial={{ opacity: 0, x: -200 }}
+          transition={{ duration: 1.5 }} 
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }} 
+          className="text-center mb-15">
             <h1 className="text-5xl font-bold bg-gradient-to-r from-yellow-400 to-pink-400 bg-clip-text text-transparent mb-4 animate-fade-in">Get In Touch</h1>
             <p className="text-lg text-white max-w-3xl mx-auto leading-relaxed">
               Have a project in mind or just want to chat? I'd love to hear from you. 
               Send me a message and I'll respond as soon as possible.
             </p>
-          </div>
+          </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
             {/* Contact Information */}
-            <div className="space-y-8">
+            <motion.div 
+            initial={{ opacity: 0, x: 200 }}
+            transition={{ duration: 1.5 }} 
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }} 
+            className="space-y-8">
               <div>
                 <h2 className="text-3xl font-bold bg-gradient-to-r from-yellow-400 to-pink-400 bg-clip-text text-transparent mb-6">Let's Connect</h2>
                 <p className="text-lg text-white mb-8 leading-relaxed">
@@ -141,10 +151,15 @@ const Contact = () => {
                   feel free to call or send a E-mail for faster response.
                 </p>
               </div>
-            </div>
+            </motion.div>
 
             {/* Contact Form */}
-            <div className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900
+            <motion.div
+            initial={{ opacity: 0, x: 200 }}
+            transition={{ duration: 1.5 }} 
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }} 
+            className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900
                p-8 rounded-2xl shadow-xl border border-gray-100">
               <h2 className="text-2xl font-bold text-gray-200 mb-6">Send Message</h2>
               
@@ -256,11 +271,16 @@ const Contact = () => {
                   By sending this message, you agree to be contacted via email or phone regarding your inquiry.
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
 
           {/* FAQ Section */}
-          <div className="mt-20 max-w-4xl mx-auto">
+          <motion.div 
+            initial={{ opacity: 0, x: -200 }}
+            transition={{ duration: 1.5 }} 
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }} 
+          className="mt-20 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-gray-100 mb-12">Frequently Asked Questions</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 p-6 rounded-xl shadow-lg">
@@ -280,7 +300,7 @@ const Contact = () => {
                 <p className="text-gray-400">Project timelines vary based on complexity, but most projects are completed within 2-8 weeks. We'll discuss specifics during our consultation.</p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
