@@ -67,7 +67,7 @@ const Projects = () => {
       image: "https://github.com/Anupkumar7196/Personal-Portfolio/blob/main/src/assets/Screenshot%202025-07-11%20201057.png?raw=true",
       technologies: ["TypeScript", "Routing", "Supabase", "Cursor"],
       category: "backend",
-      liveUrl: "mentorship-pink.vercel.app",
+      liveUrl: "https://mentorship-pink.vercel.app/",
       githubUrl: "https://github.com/Anupkumar7196/Mentorship",
       features: ["User Roles", "Responsive", "Authentication", "Season Booking"]
     }
