@@ -64,12 +64,12 @@ const Projects = () => {
       id: 6,
       title: "MentorLink",
       description: "MentorLink is a platform that connects mentors and mentees, allowing mentors to list services and mentees to book sessions and communicate easily.",
-      image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&h=400&fit=crop",
-      technologies: ["Node.js", "Express", "MongoDB", "JWT", "Multer"],
+      image: "https://github.com/Anupkumar7196/Personal-Portfolio/blob/main/src/assets/Screenshot%202025-07-11%20201057.png?raw=true",
+      technologies: ["TypeScript", "Routing", "Supabase", "Cursor"],
       category: "backend",
-      liveUrl: "https://api.example.com",
-      githubUrl: "https://github.com/johndoe/blog-cms",
-      features: ["User Roles", "Content Management", "File Upload", "SEO Tools"]
+      liveUrl: "mentorship-pink.vercel.app",
+      githubUrl: "https://github.com/Anupkumar7196/Mentorship",
+      features: ["User Roles", "Responsive", "Authentication", "Season Booking"]
     }
   ];
 
