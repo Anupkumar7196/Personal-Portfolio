@@ -62,8 +62,8 @@ const Projects = () => {
     },
     {
       id: 6,
-      title: "Blog API & CMS",
-      description: "Headless CMS and API for blog management with user roles, content moderation, and SEO optimization.",
+      title: "MentorLink",
+      description: "MentorLink is a platform that connects mentors and mentees, allowing mentors to list services and mentees to book sessions and communicate easily.",
       image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&h=400&fit=crop",
       technologies: ["Node.js", "Express", "MongoDB", "JWT", "Multer"],
       category: "backend",
