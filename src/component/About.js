@@ -27,7 +27,7 @@ const About = () => {
         className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div className="flex-shrink-0 flex justify-center items-center">
             <img
-              src="https://github.com/Anupkumar7196/Personal-Portfolio/blob/main/src/assets/WhatsApp%20Image%202025-06-24%20at%2022.52.33.jpeg?raw=true"
+              src="https://github.com/Anupkumar7196/Personal-Portfolio/blob/main/src/assets/ChatGPT%20Image%20Jul%206,%202025,%2008_05_33%20PM.png?raw=true"
               alt="Anup kumar"
               className="w-100 h-130 rounded-lg object-cover border-4 border-gray-800 shadow-2xl items-cente"
             />

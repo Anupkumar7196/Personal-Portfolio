@@ -166,7 +166,7 @@ const Body = () => {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
     link.href =
-      "https://drive.google.com/file/d/1B4egAOE3gTgLYtrXzVYp6X5e904m-i5w/view?usp=sharing";
+      "https://drive.google.com/file/d/1ec7LIa3QO1xIo-qspD9pomTONyh_rWTr/view?usp=sharing";
       link.target="_blank"
       
     link.download = "AnupUpd(Resume).pdf";
@@ -219,7 +219,7 @@ const Body = () => {
             {/* Profile Image */}
             <div className="flex-shrink-0">
               <img
-                src="https://github.com/Anupkumar7196/Personal-Portfolio/blob/main/src/assets/photo.png?raw=true"
+                src="https://github.com/Anupkumar7196/Personal-Portfolio/blob/main/src/assets/profile%20(1).jpg?raw=true"
                 alt="Anup Kumar"
                 className="w-64 h-64 rounded-full object-cover border-4 border-white shadow-2xl"
               />
